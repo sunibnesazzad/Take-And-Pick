@@ -14,7 +14,7 @@
                 Dashboard
             </a>
         </li>
-        <li>
+        <li class="">
             <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false">
                 <i class="fas fa-laptop"></i>
                 Category
@@ -29,7 +29,7 @@
                 </li>
             </ul>
         </li>
-        <li class="active">
+        <li class="">
             <a href="#pageSubmenu1" data-toggle="collapse" aria-expanded="false">
                 <i class="far fa-file"></i>
                 Items
@@ -40,7 +40,7 @@
                     <a href="404.html">All items</a>
                 </li>
                 <li>
-                    <a href="500.html">Add new item</a>
+                    <a href="{!! route('item.create') !!}">Add new item</a>
                 </li>
             </ul>
         </li>

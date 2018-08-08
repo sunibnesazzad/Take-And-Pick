@@ -28,3 +28,8 @@ Route::get('category/update/{id}', ['as' => 'category.update', 'uses' => 'Admin\
 Route::post('category/edit/{id}', ['as' => 'category.edit', 'uses' => 'Admin\CategoryController@edit']);
 //deleting category
 Route::get('category/delete/{id}',['as' => 'category.delete', 'uses' => 'Admin\CategoryController@destroy']);
+
+//All Items route
+Route::get('item', ['as' => 'item.index', 'uses' => 'Admin\ItemsController@index']);
+Route::get('item/create', ['as' => 'item.create', 'uses' => 'Admin\ItemsController@create']);
+Route::post('item/store',  'Admin\ItemsController@store');
